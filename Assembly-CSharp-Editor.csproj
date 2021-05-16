@@ -56,7 +56,6 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Editor\RCC_AIEditor.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Editor\RCC_GroundMaterialsEditor.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Editor\RCC_SettingsEditor.cs" />
@@ -65,6 +64,7 @@
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Editor\RCC_RecordsEditor.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Editor\RCC_EditorWindows.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Editor\RCC_WelcomeWindow.cs" />
+    <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Editor\RCC_AIBZEditor.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Editor\RCC_SceneGUI.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Editor\RCC_CameraEditor.cs" />
@@ -74,6 +74,7 @@
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Editor\RCC_LabelEditor.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Editor\RCC_SetScriptingSymbol.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Editor\RCC_MirrorsSetupEditor.cs" />
+    <Compile Include="Assets\Samples\Nicrom\PolyPacks\Wind\Assets\Scripts\Editor\LPVegetation_MaterialInspector.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

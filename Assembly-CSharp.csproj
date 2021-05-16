@@ -56,8 +56,6 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
-    <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Scripts\RCC_UISteeringWheelController.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Scripts\RCC_TrailerAttachPoint.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Scripts\RCC_AIO.cs" />
@@ -94,6 +92,7 @@
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Scripts\RCC_AICarController.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Scripts\RCC_UIJoystick.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Scripts\RCC_DetachablePart.cs" />
+    <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Scripts\RCC_Exhaust.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Scripts\RCC_AIBrakeZone.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Scripts\RCC_PoliceSiren.cs" />
@@ -109,6 +108,7 @@
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Scripts\RCC_SceneManager.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Scripts\RCC_ShadowRotConst.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Scripts\RCC_Core.cs" />
+    <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Scripts\RCC_PlayerPrefsX.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Scripts\RCC_AIBrakeZonesContainer.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Scripts\RCC_Customization.cs" />
@@ -127,6 +127,7 @@
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Scripts\RCC_SuspensionArm.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Scripts\RCC_DashboardInputs.cs" />
     <Compile Include="Assets\Samples\RealisticCarControllerV3\Scripts\RCC_LevelLoader.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Samples\RealisticCarControllerV3\Addon Packages\For ProFlares\Readme!.txt" />
@@ -134,8 +135,11 @@
     <None Include="Assets\Samples\RealisticCarControllerV3\Addon Packages\For Xbox &amp; PS4 Inputs\Export it to &apos;ProjectSettings&apos; folder.txt" />
     <None Include="Assets\Samples\RealisticCarControllerV3\Skybox\SkyboxGuidelines.txt" />
     <None Include="Assets\Samples\RealisticCarControllerV3\Scripts\ProjectorMultiply.shader" />
+    <None Include="Assets\Samples\Nicrom\PolyPacks\Wind\Documentation\LPW_Log.txt" />
     <None Include="Assets\Samples\RealisticCarControllerV3\LICENSE - Read Me!.txt" />
+    <None Include="Assets\Samples\Nicrom\PolyPacks\Wind\Assets\Shaders\ASE\LPW_Vegetation.shader" />
     <None Include="Assets\Samples\RealisticCarControllerV3\Scripts\RCC_Skidmarks.shader" />
+    <None Include="Assets\Samples\Customizable Skybox\Stylized Sky\Shaders\Stylized Sky.shader" />
     <None Include="Assets\Samples\RealisticCarControllerV3\Scripts\ProjectorLight.shader" />
   </ItemGroup>
   <ItemGroup>
