@@ -1,0 +1,95 @@
+<html>
+<head>
+		<title>EasyRoads3D v3 Manual</title>
+<link rel="stylesheet" type="text/css" href="../style.css" />    
+</head>
+
+	<body>
+<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="12"><img src="../images/topLeft.jpg" width="76" height="62"></td>
+    <td valign="top" class="style7" style="background:url(../images/topMiddle.jpg);padding-top:16px;padding-left:25px">EasyRoads3D V3 Beta Manual</td>
+    <td width="257" align="right"><img src="../images/topRight.jpg" width="257" height="62"></td>
+  </tr>
+</table>
+<table width="93%" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+	    <td><a href="known_issues.html"><img src="../images/previousTop.jpg" width="97" height="20" border="0"></a></td>
+	    <td align="right">&nbsp;</td>
+      </tr>
+	  <tr>
+	    <td height="35" valign="bottom"><a href="../manualv3.html"><img src="../images/home.jpg" width="130" height="20" border="0"></a></td>
+	    <td align="right">&nbsp;</td>
+      </tr>
+	  <tr>
+	    <td colspan="2" class="style1"><p class="style1">&nbsp;</p>
+	      <p class="header1" style="color:#000">Release Notes 
+	      v3 Beta 7.4<hr>
+	      <p class="style21">&nbsp;</p>
+	      <p class="header2">Important</p>
+	      <p class="style21">Important regarding importing package updates</p>
+          <p class="style1">Do NOT remove the EasyRoads3D folder before importing a package update. The EasyRoads3D folder, includes prefabs with project info such as road types, side objects and also your newly created dynamic and custom connection prefabs. When you remove the EasyRoads3D folder you will lose these assets. Also close the Custom Prefab Editor window if currently open before importing a package update.</p>
+          <p class="style1">It is also recommended to switch road networks back to Edit Mode before importing a package update.</p>
+          <p class="style1">Please always backup your project before importing a package update.</p>
+          <p class="style21">&nbsp;</p>
+          <p class="style21"><strong>Important regarding terrain objects</strong></p>
+	      <p class="link">EasyRoads3D can make a backup of your terrain(s) and restore the terrain(s) in case something went wrong.</p>
+	      <p class="link"> For additional safety measures It is recommended to duplicate the terrain object in the project panel so you always have a full back up at hand. Make sure to repeat this process after you changed the terrain!</p>
+	      <p class="link">This also applies to runtime scripts using the API to generate roads. Although this should work just fine, see the demo project runtime scene, it is always recommended to backup your terrains.</p>
+	      <p class="link">To back up your terrains simply duplicate the terrain object stored in the project panel. To find a reference to this terrain asset for the terrain in the scene, select the terrain in the scene and look in the Inspector: Terrain Collider Component &gt; Terrain Data. Put focus on the terrain slot and the corresponding terrain will be highlighted in the project panel. Select it and do CTRL + D to duplicate it. Simply drag the duplicate terrain asset in the scene to replace the original if necessary.</p>
+	      <p class="style21">&nbsp;</p>
+	      <p class="style21">Important regarding the Runtime API:</p>
+	      <p class="style1">The following is only related to scripted road networks created with the runtime API. The below does not affect road networks manually created inside the editor.</p>
+	      <p class="style1">In order to preserve the original terrain data, make sure you backup your terrains! In general restoring the terrains works well using RoadNetwork.RestoreRoadNetwork(), but it has occured that the terrain was not restored  leaving the road shape in the terrain after exiting Play Mode. This particularly happened when you put focus on the scene view window while in Play Mode!</p>
+<p class="style1">If you want to create a road network at runtime using the runtime API, it is recommended to check the above using a test terrain or make backups of your terrain(s).	      </p>
+	      <p class="style1">&nbsp;</p>
+	      <p class="style1"><strong>Important regarding Side Objects and the river example in the demo project / video</strong></p>
+	      <p class="style1">In the video the terrain is manually smoothend out at the river edges. Note that in v3 manual terrain changes on areas not affected by roads or other deformation objects are preserved when switching back to Edit Mode. The outer part is not affected by the road, the manual changes will remain visiblein the terrain. So be careful with this, only smoothen out the terrain when you are happy with the river shape or when you do not mind to manually make corrections to the terrain after switching back to Edit Mode.</p>
+	      <p class="style1">&nbsp;</p>
+<p class="style21">&nbsp;</p>
+	      <p class="style21"><span class="header2" style="color:#000">Feedback</span></p>
+          <p class="style1"> This first beta builds are primarily intended for feedback on the following aspects:</p>
+          <p class="style1">1) The new workflow and the main functionality.</p>
+          <p class="style1">2) The new toolbar functionality.</p>
+          <p class="style1">3) Creating road types, creating roads in the scene, adding markers, inserting markers, deleting markers. </p>
+          <p class="style1">4) Creating dynamic prefabs, auto connecting prefas to roads, placing prefabs directly in the scene and attaching new roads to crossing connections. Changing crossing positions (select prefab and use the Q or W key to activate move and position gizmos / handles) and rotations (use the E key to activate the rotation gzimo). Changing the alignment priority connection (select the crossing prefab and click the grey handle associated with the connection you want to have alignment priority) and functionality.          </p>
+          <p class="style1">6) handling prefabs in the scene such as changing prefab positions, rotations by using the road alignment option (is this useful or confusing?) .</p>
+          <p class="style1">&nbsp;</p>
+          <p class="header2"><strong>Release Notes:</strong></p>
+          <p class="style1"><strong>Beta 7.3 NOTE:</strong> Please refresh the road network of existing scenes: General Settings &gt; Scene Settings &gt; &quot;Refresh Road Network&quot; button</p>
+          <p class="style1"><strong>New:</strong>          </p>
+          <p>- Texture display for crossings in the Inspector. This is optional. This needs to be improved, you can try deselect/reselect the Road Network game object if you cannot see any textures after moving the Prefab Display slider to the right.</p>
+          <p>&nbsp;</p>
+          <p class="style1"><strong>Changed:</strong></p>
+          <p class="style1">-</p>
+          <p class="style1"><strong>Improved:</strong></p>
+          <p class="style1">- The side objects system has been expanded with more options. The package includes examples of how to create more complex side objects such as power lines and walls. The wall example is what you would usually use in residential areas, straight slightly bending walls. This particular wall with the square pillars is not ideal when abrupt corners are involved. More options will be added to improve this, meanwhile you can use cylinder type of pillars instead of square poles for walls with sharper corners.</p>
+          <p class="style1">&nbsp; </p>
+<p class="style1"><strong>Fixed:</strong></p>
+<p class="style1">- Terrain deformation issues on T Crossings with Activate Bending switched on and &quot;outer curb&quot; for sidewalks off.</p>
+<p class="style1">- Miscellaneous small bugs and improvements</p>
+<p class="style1">&nbsp;</p>
+<p class="style1">&nbsp;</p>
+          <p class="header2">To Do / Current limitations:          </p>
+          <p class="style1">&nbsp;</p>
+        <p class="style1">- Roundabouts: when adding connections, use the position slider to position it. When the current position overlaps another connection the roundabout will not be rebuild, a warning will appear in the console and the left and right side handles will turn red instead of green. When the current position overlaps the start or end index warning messages will appear as well! So stay within &quot;save&quot; ranges from the start (0 index) and end (depends on the resolution and radius).
+        </p> 
+        <p class="style1">- Roundabouts: changing the roundabout width or resolution after connections have already been added, may result in errors or the roundabout not being rebuild because connections are too close to eachother (see above). To fix this, select each roundabout connection from the dropdown in the Inspector and it should update automatically unless the connection overlaps another connection (see above). </p>
+        <p class="style1">- In a next build sidewalk and alignment handles will be visible without first having to select the prefab.</p>
+        <p class="style1">- In a next build the rotation alignment settings will be reset after manually changing the crossing rotation. Right now the manual changes will be lost after marker position changes to the road connected to the connection with alignment priority. To deal with this at the moment, you can turn off rotation alignment after manual changes to the prefab. You can do this by clicking the white active priority rotation handle so it turns grey.        </p>
+        <p class="style1">- Circular road segments will be optimized further for smooth continuation of the road. For now you can achieve this by tweaking the position of the marker connected to the end of the circular segment.        </p>
+        <p class="style1">- Tree /detail distance control per marker.</p>
+        <p class="style1">- &quot;Preserve Terrain Shape&quot; control per marker.        </p>
+        <p class="style1">&nbsp;</p>
+<p class="style1">&nbsp;</p></td>
+      </tr>
+	  <tr>
+	    <td><a href="known_issues.html"><img src="../images/previousBtm.jpg" width="89" height="20" border="0"></a></td>
+	    <td align="right"><a href="resources_contact.html"><img src="../images/nextBtm.jpg" width="70" height="20" border="0"></a></td>
+      </tr>
+    </table>
+	<p>&nbsp;</p>
+    </body>
+	
+</html>
+
